@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页_REN个人博客 - python语言学习之路</title>
+<meta name="keywords" content="REN的个人博客" />
+<meta name="description" content="REN个人博客 - python语言学习之路" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/css/base.css" rel="stylesheet">
+<link href="/static/css/index.css" rel="stylesheet">
+<link href="/static/css/m.css" rel="stylesheet">
+<script src="/static/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/js/hc-sticky.js"></script>
+<script type="text/javascript" src="/static/js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header class="header-navigation" id="header">
+  <nav><div class="logo"><a href="{% url 'blog:index' %}">REN个人博客</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+    <ul id="starlist">
+      <li><a href="{% url 'blog:index' %}">网站首页</a></li>
+      <!--<li><a href="">我的相册</a></li>-->
+      <li><a href="{% url 'blog:riji' %}">我的日记</a></li>
+      <li><a href="{% url 'blog:about' %}">关于我</a></li>
+      <!--<li><a href="">留言</a></li>-->
+      <!--<li><a href="{% url 'blog:infopic' %}">内容页</a></li>-->
+      <li><a href="">内容页</a></li>
+    </ul>
+</nav>
+</header>
+<article>
+  <aside class="l_box">
+      <div class="about_me">
+        <h2>关于我</h2>
+        <ul >
+          <i style="height:130px"><img src="/static/images/QQ截图20190116120907.png"></i>
+          <p><b>REN</b>，我的python语言学习之路！入行以来，一直潜心研究python语言，一边工作一边积累经验，分享学习过程的知识及经验，以及个人心得等。</p>
+        </ul>
+      </div>
+
+    <div class="fenlei"><h2>文章分类</h2>
+
+
+          {% for la in lan %}
+
+            <ul>
+              <li>&emsp;&emsp;<a href="{% url 'blog:indexl' la.id %}">{{ la.name }} &emsp; -{ {{ la.num }} 份文章 }</a></li>
+            </ul>
+          {% endfor %}
+   
+    <div class="guanzhu">
+      <h2>关注我 么么哒</h2>
+      <ul>
+        <img src="/static/images/wx.jpg">
+      </ul>
+    </div>
+  </aside>
+  <main class="r_box">
+     <div class="about">
+         <h2>局势失控! 俄乌两国再次爆发大规模冲突, 乌克兰伤亡惨重</h2>
+         <br/>
+      <p>  &emsp;&emsp;大家好，欢迎大家来到本期的瑶瑶聊军事，本期为大家带来的是：局势失控! 俄乌两国再次爆发大规模冲突, 乌克兰伤亡惨重
+近日, 据乌克兰国家电视台消息, 由于乌克兰军舰在黑海事件中升级, 乌克兰和俄罗斯已开始对抗局势。今天, 双方在边境地区部署了约 1 0万人。这是为了进一步加深俄罗斯和乌克兰之间的矛盾, 即使是现阶段的局势也开始失控。然而, 最致命的是乌克兰总统公然签署废除《乌克兰-俄罗斯友好条约》, 这一举动直接踩在了俄罗斯的红线上。</p>
+    <img src="/static/images/t01103467e520235bc1.jpg">
+<br/>
+<p>&emsp;&emsp;据乌克兰国防部称, 随着《乌俄友好条约》的废除, 俄罗斯军方直接向两国边境派遣了大量重型装甲部队重炮单位。当俄罗斯重型部队抵达预定地点时, 他们率先向乌克兰东部边境开火, 并对该地区的军事建筑进行了全面袭击。随后乌克兰立即对俄罗斯重炮阵地发动反击, 但由于双方距离相对较近, 因此双方也开始出现实质性伤亡。据相关统计, 俄罗斯在这场冲突中的伤亡人数约为数十人。相比之下, 乌克兰被俄罗斯打的措手不及, 因此乌克兰遭受了重大伤亡。</p>
+
+          <img src="/static/images/t019e7af895538f97d9.jpg">
+         <br/>
+<p>&emsp;&emsp;一些军事专家表示, 由于俄罗斯成功偷袭, 乌克兰目前完全处于戒备状态, 从乌克兰的举动, 乌克兰今后很可能反击俄罗斯军方。目前, 为了挽回面子, 乌克兰军方开始集结重兵, 在顿巴斯地区实弹射击, 有媒体称, 乌克兰将在不久的将来派遣军队向顿巴斯发动大规模袭击, 以回应俄罗斯。.另一方面, 当俄罗斯得知这一消息后, 俄罗斯也开始从该国向顿巴斯地区派遣大量坦克。</p>
+<img src="/static/images/t0129dd6318069dcf98.jpg">
+         <br/>
+<p>&emsp;&emsp;此外, 乌克兰将在明年举行总统选举, 这对乌克兰现任总统波罗申科非常不利。如果波罗申科在乌克兰-俄罗斯冲突中取得成就, 明年支持波罗申科连任的可能性将更大。规模缩小, 因此这也是波罗申科瞄准顿巴斯的主要原因。因为一旦波罗申科能够将俄罗斯的注意力吸引到顿巴斯地区, 乌克兰就有机会重新夺回克里米亚半岛, 这对乌克兰总统选举具有重要意义。本文由瑶瑶聊军事独家原创发布，本文图片来源于网络，如出现图片侵权请联系删除。</p>
+
+          <h2>About my blog</h2>
+          &nbsp;
+          <p>域 名：https://renxuwei.github.io/ 创建于2015年08月08日&nbsp;</p>
+          <br />
+          <p>备案号：蜀ICP备11002373号-1</p>
+          <br />
+          <p>程 序：PHP 帝国CMS7.5</p>
+  
+     </div>
+  </main>
+</article>
+<footer>
+  <p>Design by <a href="https://renxuwei.github.io/" target="_blank">REN个人博客</a> <a href="https://renxuwei.github.io/">蜀ICP备11002373号-1</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
